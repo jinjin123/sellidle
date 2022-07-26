@@ -41,3 +41,8 @@ npm run start
 ![demo1](https://github.com/jinjin123/sellidle/blob/main/bindport.png)
 ![demo](https://github.com/jinjin123/sellidle/blob/main/sellvps.png)
 
+#not need forward single port without ssh, usefull for share web
+6901 web vnc ,  5901 vnc
+```
+docker run -d -p 9502:5901 -p  9501:6901 --cpus=2 --memory 1g -e VNC_PW="xxxx" consol/centos-xfce-vnc\n
+```
